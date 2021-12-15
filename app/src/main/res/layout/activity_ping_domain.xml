@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".domain.PingDomainActivity">
+
+    <TextView
+        android:id="@+id/tvPingResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvPingGoogle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"
+        android:text="Ping google的域名"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/view_group_bg"/>
+
+    <TextView
+        android:id="@+id/tvPingBaidu"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPingGoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="Ping baidu的域名"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/view_group_bg"/>
+
+    <TextView
+        android:id="@+id/tvPingAlibaba"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPingBaidu"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="Ping alibaba的域名"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/view_group_bg"/>
+
+    <TextView
+        android:id="@+id/tvLiveData"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPingAlibaba"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:paddingHorizontal="20dp"
+        android:text="LiveData传输数据的容量"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/view_group_bg"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

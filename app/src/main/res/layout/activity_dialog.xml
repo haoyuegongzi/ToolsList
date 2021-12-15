@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialog.DialogActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="btnDialog"/>
+
+    <Button
+        android:id="@+id/btnThreeButtonDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="btnThreeButtonDialog"/>
+
+    <Button
+        android:id="@+id/btnEditTextDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="btnEditTextDialog"/>
+
+    <Button
+        android:id="@+id/btnSingleCheckDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="btnSingleCheckDialog"/>
+
+    <Button
+        android:id="@+id/btnMultipleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="btnMultipleDialog"/>
+
+    <Button
+        android:id="@+id/btnSingleList"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="btnSingleList"/>
+
+    <Button
+        android:id="@+id/btnCustomViewDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="btnCustomViewDialog"/>
+</LinearLayout>

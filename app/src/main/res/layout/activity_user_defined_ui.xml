@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayoutView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_defined_ui.UserDefinedUiActivity">
+
+
+    <com.mydemo.toolslist.user_defined_ui.VideoView
+        android:id="@+id/vvView"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.mydemo.toolslist.user_defined_ui.VideoView>
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vvView"
+        android:text="点击事件的变化"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

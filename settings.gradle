@@ -1,0 +1,5 @@
+include ':lib'
+include ':annotationlib'
+include ':libannotation'
+include ':myannotation'
+include ':app'

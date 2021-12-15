@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/autotvMany"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/common_blue"
+                android:autoSizeTextType="uniform"
+                app:autoSizeStepGranularity="1sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="6sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/autotvLittle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/light_purple"
+                android:autoSizeTextType="uniform"
+                app:autoSizeStepGranularity="1sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="6sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDialog"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="tvDialog"
+                    android:gravity="center"
+                    android:background="@color/green"/>
+
+                <TextView
+                    android:id="@+id/tvControlNestedScrollView"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="控制NestedScrollView"
+                    android:gravity="center"
+                    android:background="@color/flow_table_item05"/>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clOpenView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_group_bg"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btnRxJavaCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxCreate"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxMap"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaCreate"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaZip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxZip"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaMap"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaDistinct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxDistinct"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaZip"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaConcat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxConcat"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaCreate"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaFlatMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxFlatMap"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaConcat"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaCreate"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaConcatMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxConcatMap"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaFlatMap"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaCreate"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxFilter"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaConcatMap"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaDistinct"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaBuffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxBuffer"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaConcat"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxTimer"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaBuffer"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaFlatMap"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaInterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxInterval"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaTimer"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaConcatMap"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaDoOnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxDoOnNext"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaInterval"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaFilter"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaSkip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxSkip"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaBuffer"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaTake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxTake"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaSkip"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaTimer"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaSingleObserver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxSingleObserver"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaTake"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaInterval"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxScan"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaReduce"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaDefer"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaDebounce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxDebounce"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaSkip"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaDefer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxDefer"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaDebounce"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaTake"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaLast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxLast"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaDefer"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaSingleObserver"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaMerge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxMerge"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/btnRxJavaLast"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaSingleObserver"/>
+
+                <Button
+                    android:id="@+id/btnRxJavaReduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RxReduce"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRxJavaDebounce"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/view_group_bg"
+                android:paddingVertical="3dp"
+                android:layout_marginVertical="2dp">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnStartService"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="常规启动服务"
+                            android:textAllCaps="false"
+                            android:textSize="12sp"/>
+
+                        <Button
+                            android:id="@+id/btnBindService"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="绑定启动服务"
+                            android:textAllCaps="false"
+                            android:textSize="12sp"/>
+
+                        <Button
+                            android:id="@+id/btnUnBindService"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="解绑服务"
+                            android:textAllCaps="false"
+                            android:textSize="12sp"/>
+
+                        <Button
+                            android:id="@+id/btnStopService"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="停止服务"
+                            android:textAllCaps="false"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <Button
+                    android:id="@+id/btnPopupWindow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PopupWindow对Activity生命周期的影响"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nsView"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_group_bg"
+                android:layout_marginVertical="2dp">
+
+                <Button
+                    android:id="@+id/btnGetMeasureSpec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取View的宽高参数"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnIntentServiceStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="启动IntentService"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/btnGetMeasureSpec"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnIntentServiceStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="停止IntentService"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/btnIntentServiceStart"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnIntentServiceBind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绑定启动IntentService"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnGetMeasureSpec"/>
+
+                <Button
+                    android:id="@+id/btnIntentServiceUnBind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="解绑IntentService"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/btnIntentServiceBind"
+                    app:layout_constraintTop_toBottomOf="@+id/btnIntentServiceStop"/>
+
+                <Button
+                    android:id="@+id/btnBroadcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="广播"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/btnIntentServiceUnBind"
+                    app:layout_constraintTop_toBottomOf="@+id/btnIntentServiceStop"/>
+
+                <ImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBroadcast"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/view_group_bg">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btnNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="NotificationActivity"/>
+
+                    <Button
+                        android:id="@+id/btnSMSMonitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="SMSMonitorActivity"/>
+
+                    <Button
+                        android:id="@+id/btnUserDefinedUi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="UserDefinedUiActivity"/>
+
+                    <Button
+                        android:id="@+id/btnHandler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="HandlerActivity"/>
+
+                    <Button
+                        android:id="@+id/btnPingDomain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="PingDomainActivity"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnViewPager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ViewPager2"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/btnViewPager2Frag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ViewPager2Frag"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/btnViewPager2FragBlank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="btnViewPager2FragBlank"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/btnOkHttpSocket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="OkHttpSocketActivity"/>
+
+                    <Button
+                        android:id="@+id/btnMotionLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="MotionLayoutActivity"/>
+
+                    <Button
+                        android:id="@+id/btnAnnotation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="AnnotationActivity"/>
+
+                    <Button
+                        android:id="@+id/btnExecutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="ExecutorActivity"/>
+
+                    <Button
+                        android:id="@+id/btnLiveData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="LiveDataActivity"/>
+
+                    <Button
+                        android:id="@+id/btnItemTouchHelper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="ItemTouchHelperActivity"/>
+
+                    <Button
+                        android:id="@+id/btnSlidingPaneLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="SlidingActivity"/>
+
+                    <Button
+                        android:id="@+id/btnSpannable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="SpannableActivity"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

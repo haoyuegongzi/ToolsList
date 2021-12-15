@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#3d3d3d</color>
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorPrimaryDark">#03a9f4</color>
+    <color name="common_bg">#f5f5f5</color>
+    <color name="common_blue">#03a9f4</color>
+    <color name="common_blue_dark">#0288d1</color>
+    <color name="common_blue_light">#039be5</color>
+    <color name="common_disable">#d9d9d9</color>
+    <color name="common_divider">#d4d4d4</color>
+    <color name="hce_text_title">#333333</color>
+    <color name="common_gray">#dddddd</color>
+    <color name="common_purple">#d500f9</color>
+    <color name="common_red">#f11919</color>
+    <color name="text_basic_black1">#4A4A4A</color>
+    <color name="text_basic_black2">#646a73</color>
+    <color name="text_basic_black3">#666D6C</color>
+    <color name="consumption">#a1a6b3</color>
+    <color name="text_basic_green">#00a661</color>
+    <color name="text_basic_green2">#E5F6EF</color>
+    <color name="text_basic_black">#394043</color>
+    <color name="text_basic_gray">#9B9B9B</color>
+    <color name="gray">#808080</color>
+    <color name="red">#ff0000</color>
+    <color name="text_color_hint">#9b9b9b</color>
+    <color name="color_hint">#cbced6</color>
+    <color name="gray_f9f9f9">#fff9f9f9</color>
+    <color name="common_white">#FFFFFF</color>
+    <color name="common_yellow">#fe9c2f</color>
+
+    <color name="text_dark">#999999</color>
+    <color name="text_light_dark">#333333</color>
+    <color name="text_normal">#666666</color>
+    <color name="jksqblue">#0091FF</color>
+    <color name="app_bg">#fff7f7f7</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="buttonSolid">#ffffffff</color>
+    <color name="zise">#FFFF00FF</color>
+
+    <color name="edit_bg">#ff999999</color>
+    <color name="btn_bg">#ffbbbbbb</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="light_purple">#CFC3ED</color>
+    <color name="light_blue">#AFBDFA</color>
+    <color name="light_green">#A2D0FF</color>
+    <color name="blue_green">#5ED9F0</color>
+    <color name="green">#8FE6C3</color>
+    <color name="deep_green">#76DFCB</color>
+    <color name="light_red">#FFB1A2</color>
+    <color name="sky_blue1">#93A5F4</color>
+    <color name="sky_blue2">#61A6EF</color>
+    <color name="sky_blue3">#428DDD</color>
+    <color name="sky_blue_green">#43C5DD</color>
+    <color name="black">#ff000000</color>
+    <color name="b8b8b8">#8b8b8b</color>
+    <color name="light_gray">#e5e5e5</color>
+    <color name="tool_bar">#03a9f4</color>
+    <color name="drawer_divider">#e1e1e1</color>
+    <color name="tab_navigation_un">#515151</color>
+    <color name="tab_navigation">#1296db</color>
+    <color name="article_type">#03a9f4</color>
+    <color name="fire_hot_item">#3f4e8b</color>
+
+    <color name="tag_select_textcolor">#FFffffff</color>
+    <color name="tablayout_selected">#b4e5fc</color>
+    <color name="search_hint">#81d4fa</color>
+    <color name="yellow">#ffff00</color>
+    <color name="fire_hot_flow">#fafafa</color>
+
+    <color name="flow_table_item01">#3298db</color>
+    <color name="flow_table_item02">#e64c3b</color>
+    <color name="flow_table_item03">#f0c40f</color>
+    <color name="flow_table_item04">#449d44</color>
+    <color name="flow_table_item05">#ff7f00</color>
+
+    <color name="flash_detail">#394043</color>
+    <color name="text_basic_gray2">#e1e4eb</color>
+    <color name="tabIndicatorColor">#9b9b9b</color>
+    <color name="commom_button_bg">#00a661</color>
+    <color name="allbg">#F2F2F2</color>
+    <color name="commom_line">#e1e4eb</color>
+
+    <!--分隔符-->
+    <color name="btn_038DFF">#038DFF</color>
+    <color name="btn_DCDCDC">#DCDCDC</color>
+    <color name="color_333">#ff333333</color>
+    <color name="color_666">#666666</color>
+    <color name="color_999">#999999</color>
+
+    <color name="color_000">#ff000000</color>
+    <color name="tv_0BB">#0BBEFF</color>
+    <color name="line_6D778B">#6D778B</color>
+    <color name="line_05A3FF">#05A3FF</color>
+    <color name="line_B9B9B9">#B9B9B9</color>
+    <color name="color_ff4848">#FF4848</color>
+
+    <color name="hint_color">#FF8F8F8F</color>
+    <color name="btn_press_blue">#FF2E509C</color>
+    <color name="btn_press_gray">#FF7B7E81</color>
+    <color name="solid_299FFF">#ff299FFF</color>
+    <color name="solid_1087E9">#ff1087E9</color>
+    <color name="gray_333">#ff333333</color>
+
+</resources>

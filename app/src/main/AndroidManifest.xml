@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mydemo.toolslist">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".domain.PingDomainActivity"></activity>
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".user_defined_ui.UserDefinedUiActivity" />
+        <activity android:name=".span.SpannableActivity" />
+        <activity android:name=".layout.LayoutActivity" />
+        <activity android:name=".sliding.SlidingActivity" />
+        <activity android:name=".touch.ItemTouchHelperActivity" />
+        <activity android:name=".network.NetWorkActivity" />
+        <activity android:name=".h5.H5Activity" />
+        <activity android:name=".livedata.LiveDataActivity" />
+        <activity android:name=".annotation.AnnotationActivity" />
+        <activity android:name=".motionlayout.MotionLayoutActivity" />
+        <activity android:name=".socket.OkHttpSocketActivity" />
+        <activity android:name=".sms.SMSMonitorActivity" />
+        <activity android:name=".notification.MonitorActivity" /> <!-- <activity android:name=".notification.notice.NoticeActivity" /> -->
+        <activity android:name=".dialog.DialogActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".viewpager2.blank.BlankActivity" /> <!-- <activity android:name=".viewpager2.order.OrderFormActivty" /> -->
+        <!-- <activity android:name=".viewpager2.fragment.ViewPager2FragmentActivity" /> -->
+        <activity android:name=".viewpager2.ViewPager2Activity" />
+        <activity android:name=".broadcast.BroadcastActivity" />
+        <activity android:name=".bitmap.BitMapActivity" />
+        <activity android:name=".async.RecyclerViewActivity" />
+        <activity android:name=".executor.ExecutorActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".kkk.CustomerService" />
+        <service android:name=".kkk.CustomerIntentService" /> <!-- //**enabled 设置为 true 意味着能够接受到信息，exported 为 true 意味着能够接收到外部apk广播发送的信息*/ -->
+        <receiver
+            android:name=".broadcast.BroadcastManifest03"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+
+                <!-- //还可以在这里面设置BroadcastReceiver广播的android:priority属性的优先级，在-1000~1000范围 内，数值越大优先级越高。 -->
+                <action android:name="BroadcastManifest" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcast.BroadcastManifest01"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="BroadcastManifest" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcast.BroadcastManifest02"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="BroadcastManifest" />
+            </intent-filter>
+        </receiver> <!-- <service -->
+        <!-- android:name=".notification.NotifyService" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.service.notification.NotificationListenerService" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> &lt;!&ndash; <service &ndash;&gt; -->
+        <!-- android:name=".notification.MyNotifiService" -->
+        <!-- android:label="通知监控" -->
+        <!-- android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" -->
+        <!-- android:priority="1000"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.service.notification.NotificationListenerService" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <service
+            android:name=".notification.NotificationMonitorService"
+            android:label="NotificationMonitor"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+
+    <!--VideoViewAttr自定义属性-->
+    <declare-styleable name="VideoViewAttr">
+        <!--
+            "reference" //引用
+            "color" //颜色
+            "boolean" //布尔值
+            "dimension" //尺寸值
+            "float" //浮点值
+            "integer" //整型值
+            "string" //字符串
+            "fraction" //百分数,比如200%
+        -->
+        <!--是否需要默认封面布局-->
+        <attr name="is_need_cover_layout" format="boolean" />
+        <!--默认封面布局左边距-->
+        <attr name="cover_layout_padding_left" format="reference|dimension" />
+        <!--默认封面布局右边距-->
+        <attr name="cover_layout_padding_right" format="reference|dimension" />
+        <!--是否需要顶部状态栏布局-->
+        <attr name="is_need_top_bar" format="boolean" />
+        <!--是否需要底部默认进度条布局,一般在视频列表条目时才需要该布局-->
+        <attr name="is_need_default_progress_bar" format="boolean" />
+        <!--是否需要底部播放进度条布局,一般在小视频全屏播放时不需要该布局,自己手工定制-->
+        <attr name="is_need_play_progress_bar" format="boolean" />
+        <!--是否是全屏显示模式-->
+        <attr name="is_fullscreen" format="boolean" />
+        <!--默认背景色-->
+        <attr name="defualt_bg_Color" format="color" />
+        <!--默认进度-->
+        <attr name="defualt_progress" format="integer" />
+
+    </declare-styleable>
+</resources>
